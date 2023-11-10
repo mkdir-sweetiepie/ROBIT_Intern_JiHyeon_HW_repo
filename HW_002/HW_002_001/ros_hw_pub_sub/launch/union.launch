@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="ros_hw_pub_sub" type="publisher" name="publisher"/>
+    <node pkg="ros_hw_pub_sub" type="subscriber" name="subscriber"/>
+</launch>

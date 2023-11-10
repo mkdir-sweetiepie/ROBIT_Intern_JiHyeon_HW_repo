@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="ros_hw_pub_sub" type="publisher" name="publisher"/>
+    	<param name="data1" type="int" value="0" />
+    	<param name="data2" type="int" value="0" />
+    	<param name="message" type="str" value="" />
+    <node pkg="ros_hw_pub_sub" type="subscriber" name="subscriber"/>
+</launch>

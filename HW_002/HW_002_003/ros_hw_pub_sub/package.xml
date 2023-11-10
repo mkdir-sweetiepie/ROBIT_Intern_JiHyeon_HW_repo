@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+<name>ros_hw_pub_sub</name>
+<version>0.0.0</version>
+<description>The ros_pub_sub : ros HW_002_001</description>
+<license>Apache 2.0</license>
+<author email="hong091788@naver.com">HongJihyeon</author>
+<maintainer email="hong091788@naver.com">HongJihyeon</maintainer>
+<url type="website">https://github.com/mkdir-sweetiepie</url>
+
+<buildtool_depend>catkin</buildtool_depend>
+<depend>roscpp</depend>
+<depend>std_msgs</depend>
+<depend>message_generation</depend>
+<export></export>
+</package>
+
