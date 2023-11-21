@@ -35,11 +35,11 @@ void Joy_cmd_vel::operate()
 {
   geometry_msgs::Twist twist;
 
-  current_linear = std::min<float>(std::max<float>(current_linear, -LINEAR_MAX), LINEAR_MAX);
-  current_angular = std::min<float>(std::max<float>(current_angular, -ANGULAR_MAX), ANGULAR_MAX);
+  target_linear = std::min<float>(std::max<float>(target_linear, -LINEAR_MAX), LINEAR_MAX);
+  target_angular = std::min<float>(std::max<float>(target_angular, -ANGULAR_MAX), ANGULAR_MAX);
 
-  twist.linear.x = current_linear;
-  twist.angular.z = current_angular;
+  twist.linear.x = target_linear;
+  twist.angular.z = target_angular;
 
   vel_pub_.publish(twist);
 }
